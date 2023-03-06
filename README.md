@@ -8,6 +8,11 @@ With rs.ui, you can have something like this in seconds:
 ![Screenshot 2023-03-06 at 12 57 19 PM](https://user-images.githubusercontent.com/83082268/223217042-a50d79cf-906e-4b3a-8af2-e539fbe73836.png)
 
 ## Usage
+rs.ui can be installed with the following command:
+```
+devtools::install_github("grcatlin/rs.ui")
+```
+
 The basic flow of rs.ui is to call `rs.ui()`, then reboot or reload RStudio.
 ```
 library(rs.ui)
