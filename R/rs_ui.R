@@ -47,7 +47,7 @@ rs.ui <- function(theme_def = NULL, main_color = NULL, restore = F, export = F) 
   }
 
   # convert theme_def to data.table
-  if (!is.null(theme_def)) {theme_def = as.data.table(theme_def)}
+  if (!is.null(theme_def)) {theme_def = data.table::as.data.table(theme_def)}
 
   # check RStudio availability, build, OS, theme_def
   init_checks(theme_def, main_color)
@@ -77,6 +77,8 @@ rs.ui <- function(theme_def = NULL, main_color = NULL, restore = F, export = F) 
 
   # export
   if (export) {
+    exp = mods$theme
+    exp[, ELEMENT := stringr::str_replace_all(ELEMENT, "--theme-", "")]
     fwrite(mods$theme, "theme.csv")
     message(paste0("theme.csv was saved in your current working directory: ", getwd()))
   }

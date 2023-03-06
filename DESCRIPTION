@@ -8,11 +8,12 @@ Description: Builds and installs css files that override RStudio's default theme
 License: use_mit_license("Garrett Catlin")
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    R (>= 2.10),
-    data.table,
+Imports:
     grDevices,
     stringr,
     rstudioapi,
     fs
+Depends: 
+    R (>= 2.10),
+    data.table
 RoxygenNote: 7.2.3
