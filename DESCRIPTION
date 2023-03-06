@@ -1,0 +1,18 @@
+Package: rs.ui
+Type: Package
+Title: Custom RStudio UI
+Version: 0.1.0
+Author: Garrett Catlin
+Maintainer: Garrett Catlin <catlin@hey.com>
+Description: Builds and installs css files that override RStudio's default theme configurations.
+License: use_mit_license("Garrett Catlin")
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10),
+    data.table,
+    grDevices,
+    stringr,
+    rstudioapi,
+    fs
+RoxygenNote: 7.2.3

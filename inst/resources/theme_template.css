@@ -1,0 +1,193 @@
+/************
+ main colors
+ ***********/
+:root {
+  /* main borders */
+  --theme-main-ui-bg: COL;
+
+  /* tab space */
+  --theme-main-tab-space: COL;
+
+  /* search box outline when searching & find and replace buttons*/
+  --theme-main-ui-button-bg: COL;
+
+  /* outline of most everything */
+  --theme-main-ui-border: COL;
+
+  /* search box background color */
+  --theme-main-input-bg: COL;
+
+  /* active tab fill color */
+  --theme-main-active-tab: COL;
+
+  /* inactive tab fill color and bottom of script */
+  --theme-main-inactive-tab: COL;
+
+  /* max min buttons for panels & corners of panels? */
+  --theme-main-tab-gradient-dark: linear-gradient(to right, transparent, var(--theme-main-ui-bg) 50%);
+
+  /* file path gradient*/
+  --theme-main-tab-gradient-light: linear-gradient(to right, var(--theme-main-active-tab), transparent 75%);
+
+  /* autocomplete text color */
+  --theme-main-autocomplete-fg: COL;
+}
+
+/***********
+autocomplete
+***********/
+.rstudio-themes-flat.rstudio-themes-dark-menus .ace_editor.ace_autocomplete {
+  background: var(--theme-main-ui-bg);
+  border: solid 1px var(--theme-main-ui-border) !important;
+  color: var(--theme-main-autocomplete-fg);
+}
+
+.rstudio-themes-flat.rstudio-themes-dark-menus .menuPopupMiddleCenter,
+.rstudio-themes-flat.rstudio-themes-dark-menus .themedPopupPanel .popupMiddleCenter,
+.rstudio-themes-flat.rstudio-themes-dark-menus .gwt-SuggestBoxPopup .suggestPopupMiddleCenter {
+  background: var(--theme-main-ui-bg);
+  border: solid 1px var(--theme-main-ui-bg);
+  color: var(--theme-main-autocomplete-fg);
+}
+
+/**********
+Environment
+***********/
+#rstudio_workbench_panel_environment :-webkit-any(td, tr) {
+  border-color: var(--theme-main-ui-bg) !important;
+}
+
+/*******
+Packages
+*******/
+.editor_dark .ace_editor_theme .GND-IWGDGI {
+  color: var(--theme-main-autocomplete-fg) !important;
+}
+
+#rstudio_workbench_panel_packages :-webkit-any(td) {
+  border-color: var(--theme-main-ui-bg) !important;
+}
+
+.rstudio-themes-flat .rstudio-themes-dark-grey .dataGridHeader,
+.rstudio-themes-flat .rstudio-themes-dark-grey .GD15MCFCHBC,
+.rstudio-themes-flat .rstudio-themes-dark-grey .GD15MCFCGCC {
+  border-color: var(--theme-main-ui-border) !important;
+}
+
+.rstudio-themes-flat.rstudio-themes-dark-menus:-webkit-any(.gwt-MenuItemSeparator, .menuSeparatorInner) {
+  border-color: var(--theme-main-ui-border) !important;
+}
+
+/*******
+General
+*******/
+/* Outer Container/Pane Borders */
+.rstudio-themes-flat>.rstudio-themes-dark :-webkit-any(.windowframe, .rstheme_minimizedWindowObject)>div:last-child {
+  border: 1px solid var(--theme-main-ui-border) !important;
+}
+
+/* panel dividers */
+.rstudio-themes-flat .rstudio-themes-dark-grey :-webkit-any(.gwt-SplitLayoutPanel-HDragger, .gwt-SplitLayoutPanel-VDragger) {
+  background: var(--theme-main-ui-bg) !important;
+}
+
+/* Active Primary/Secondary Tab Toolbar(s) */
+.rstudio-themes-dark .rstheme_toolbarWrapper,
+.rstudio-themes-dark .rstheme_secondaryToolbar {
+  background-color: var(--theme-main-active-tab) !important;
+  border-color: var(--theme-main-active-tab) !important;
+}
+
+/* tabs */
+.rstudio-themes-dark .gwt-TabLayoutPanelTab:not(.gwt-TabLayoutPanelTab-selected) .rstheme_tabLayoutCenter,
+.rstudio-themes-dark .rstheme_minimizedWindowObject .rstheme_center {
+  background-color: var(--theme-main-inactive-tab) !important;
+  /* color: var(--theme-main-editor-fg) !important; */
+  border-color: var(--theme-main-ui-border) !important;
+  cursor: pointer;
+}
+
+/* active tab */
+.rstudio-themes-dark .gwt-TabLayoutPanelTab.gwt-TabLayoutPanelTab-selected .rstheme_tabLayoutCenter {
+  background-color: var(--theme-main-active-tab) !important;
+  border-color: var(--theme-main-ui-border) !important;
+}
+
+/* tab empty space */
+utCenter,
+.rstudio-themes-flat .rstudio-themes-dark-grey .gwt-TabLayoutPanelTabs {
+  background: var(--theme-main-tab-space) !important;
+}
+
+/* dark gradients */
+.rstudio-themes-flat .rstudio-themes-dark-grey :-webkit-any(.GGBOEFPDDS, .GD15MCFCCS, .GCHYANPCES, .GEL-OVUBOR, .GND-IWGDKS,
+  .GMPCVXDBKS) {
+  background: var(--theme-main-tab-gradient-dark) !important;
+}
+
+/* gradient in files pane that displays when path is too long */
+.rstudio-themes-flat .rstudio-themes-dark-grey .breadcrumb :-webkit-any(.GD15MCFCCJ, .GGBOEFPDCJ, .GCHYANPCCJ, .GND-IWGDCJ) {
+  background: var(--theme-main-tab-gradient-light);
+}
+
+/* other toolbars */
+.rstudio-themes-dark .rstudio-themes-background {
+  background-color: var(--theme-main-active-tab) !important;
+  border-top-color: var(--theme-main-ui-border) !important;
+  border-bottom-color: var(--theme-main-ui-border) !important;
+}
+
+/* panel separators cont. */
+.rstudio-themes-flat>.rstudio-themes-dark,
+.rstudio-themes-flat>.rstudio-themes-dark :-webkit-any(.gwt-TabLayoutPanel, .gwt-TabLayoutPanelContent) {
+  background: var(--theme-main-ui-bg) !important;
+}
+
+
+
+/*****
+Search
+******/
+/* searchbox background */
+.rstudio-themes-dark :-webkit-any(.rstheme_toolbarWrapper, #rstudio_find_replace_bar) .search,
+.rstudio-themes-flat .themedPopupPanel .search,
+.rstudio-themes-flat.rstudio-themes-dark-menus .search {
+  border-color: var(--theme-main-ui-border) !important;
+  background: var(--theme-main-input-bg) !important;
+}
+
+/* highlight box */
+.js-focus-visible .focus-visible:not(.gwt-MenuBar),
+input[type="checkbox"].focus-visible {
+  outline: var(--theme-main-ui-button-bg) solid 2px !important;
+}
+
+/* find and replace buttons */
+#rstudio_find_replace_bar :-webkit-any(button)>table:first-child {
+  background-color: var(--theme-main-ui-button-bg) !important;
+}
+
+
+/*************
+Odds and Ends
+*************/
+/* datagrid - ex: file view name size modified toolbar */
+.rstudio-themes-dark .dataGridHeader,
+.rstudio-themes-dark tr[__gwt_header_row]> :-webkit-any(td, th),
+.rstudio-themes-dark .dataTables_info {
+  background: var(--theme-main-ui-bg) !important;
+  border-color: var(--theme-main-ui-border) !important;
+}
+
+/* package install popup */
+.rstudio-themes-flat .rstudio-themes-dark .GND-IWGDJFD {
+  background-color: var(--theme-main-ui-bg) !important;
+  border-bottom: 1px solid var(--theme-main-ui-bg) !important;
+}
+
+/* filter button when filtering View Data*/
+.rstudio-themes-dark .GMPCVXDBIV,
+.GND-IWGDIV {
+  background-color: var(--theme-main-ui-bg) !important;
+  border-color: var(--theme-main-ui-bg) !important;
+}

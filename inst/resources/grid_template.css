@@ -1,0 +1,72 @@
+/************
+ main colors
+ ***********/
+:root {
+  /* black */
+  --theme-grid-black: COL;
+
+  /* white */
+  --theme-grid-white: COL;
+
+  /* background */
+  --theme-grid-bg: COL;
+
+  /* highlight */
+  --theme-grid-highlight: COL;
+
+  /* bars */
+  --theme-grid-bars: COL;
+
+  /* selected-bars */
+  --theme-grid-selected-bars: COL;
+}
+
+/* JS This is the color of the data cells */
+.rstudio-themes-flat.rstudio-themes-dark-grey #rsGridData_info,
+.rstudio-themes-flat.rstudio-themes-dark-grey th,
+.rstudio-themes-flat.rstudio-themes-dark-grey td.first-child,
+.rstudio-themes-flat.rstudio-themes-dark-grey table.dataTable thead th {
+  background-color: var(--theme-grid-bg);
+}
+
+/* JS This is the color of the border of the data cells */
+.rstudio-themes-flat.rstudio-themes-dark-grey #rsGridData_info,
+.rstudio-themes-flat.rstudio-themes-dark-grey table.dataTable thead th,
+.rstudio-themes-flat.rstudio-themes-dark-grey table.dataTable thead td,
+.rstudio-themes-flat.rstudio-themes-dark-grey table.dataTable tbody td {
+  border-color: var(--theme-grid-black);
+}
+
+/* filter box backgrounds */
+.rstudio-themes-dark-grey .colFilter, .rstudio-themes-dark-grey .numValueBox {
+    border-color: var(--theme-grid-white);
+    color: var(--theme-grid-white);
+    background: var(--theme-grid-black);
+}
+
+/* filter select background */
+.rstudio-themes-dark-menus .filterPopup {
+    background: var(--theme-grid-black);
+    border: solid 1px transparent;
+}
+
+/* filter histogram bars */
+.editor_dark .histBar {
+    background-color: var(--theme-grid-bars);
+}
+
+/* filter histogram bars selected*/
+.editor_dark .selected .histBar {
+    background-color: var(--theme-grid-selected-bars);
+}
+
+/* filter histogram selected highlight */
+.editor_dark .histBack.selected {
+    background-color: var(--theme-grid-highlight);
+}
+
+/* filter text highlight */
+.rstudio-themes-dark-grey .textFilterBox {
+    background: var(--theme-grid-black);
+    color: var(--theme-grid-white);
+}
