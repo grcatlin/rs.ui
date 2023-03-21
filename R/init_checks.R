@@ -6,9 +6,9 @@ init_checks = function(theme_def, main_color) {
 
   # Print message about compatibility with other RStudio versions
   rs_version = rstudioapi::versionInfo()$version
-  if (rs_version != "2022.12.0.353") {
+  if (rs_version != "2023.3.0.386") {
     msg <- paste0(
-      "rs.ui was built for RStudio 2022.12.0.353 but this is RStudio ",
+      "rs.ui was built for RStudio 2023.3.0.386 but this is RStudio ",
       rs_version,
       ".\n\n",
       "UI elements may not look as expected as there is typically a breaking ",
