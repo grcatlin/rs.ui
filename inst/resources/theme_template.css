@@ -163,10 +163,9 @@ input[type="checkbox"].focus-visible {
 }
 
 /* find and replace buttons */
-#rstudio_find_replace_bar :-webkit-any(button)>table:first-child {
-  background-color: var(--theme-main-ui-button-bg) !important;
+.rstudio-themes-dark button.GND-IWGDN1>table:first-child {
+    background: var(--theme-main-ui-button-bg) !important;
 }
-
 
 /*************
 Odds and Ends
